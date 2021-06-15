@@ -1,0 +1,15 @@
+<html>
+{% block scripts %}
+{{ super() }}
+{{ moment.include_moment() }}
+{% endblock %}
+<head>
+ {% block head %}
+ <title>{% block title %}{% endblock %} - My Application</title>
+ {% endblock %}
+</head>
+<body>
+ {% block body %}
+ {% endblock %}
+</body>
+</html>
